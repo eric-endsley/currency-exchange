@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Currency Exchange Calculator</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron">
+     <h1>Currency Exchange Calculator</h1>
+    </div>
+    <label for ="dollars">Enter the number of USD you want to convert:</label>
+    <input id="dollars" type="number"></input>
+    <select class="form-control" id="currency">
+      <option value="EUR">Euros (EU)</option>
+      <option value= "GBP">Pounds (UK)</option>
+      <option value="JPY">Yen (JP)</option>
+      <option value="CNY">Yuan (CN)</option>
+      <option value="BRL">Real (BZ)</option>
+    </select>
+    <div class = "output">
+    </div>
+  </div>
 </body>
 </html>
