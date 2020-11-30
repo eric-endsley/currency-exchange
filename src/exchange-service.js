@@ -9,6 +9,6 @@ export class ExchangeService {
       })
       .catch(function(error) {
         return error;
-      })
+      });
   }
 }
