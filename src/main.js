@@ -6,11 +6,14 @@ import {ExchangeService} from './exchange-service.js';
 
 function convertCurrency(response) {
   if (response.result === "success") {
-    let newCurrency = $("#currency").val();
-    let usdInput = $("#dollars").val();
-    if (response.conversion_rates[newCurrency]) {
-      let convertDollars = usdInput * response.conversion_rates[newCurrency];
-      $("#output").text(`${usdInput} USD is equivalent to ${convertDollars} of the selected currency`);
+    let inputArray = $("#currency").val().split(', ');
+    console.log(inputArray)
+    let currencyCode = inputArray[0];
+    if (response.conversion_rates[currencyCode]) {
+      let currencyName =  inputArray[1];
+      let usdInput = $("#dollars").val();
+      let convertDollars = usdInput * response.conversion_rates[currencyCode];
+      $("#output").text(`${usdInput} USD is equivalent to ${convertDollars} in ${currencyName}`);
     } else {
       $("#output").text("Please select a valid currency");
     }
