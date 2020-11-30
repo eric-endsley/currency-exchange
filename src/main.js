@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import {ExchangeService} from './exchange-service.js'
 
-function getCurrency(response) {
+function convertCurrency(response) {
   if (response.result = "success") {
     let newCurrency = $("#currency").val();
     let usdInput = $("#dollars").val();
@@ -15,4 +15,11 @@ function getCurrency(response) {
   }
 } 
 
-
+$(document).ready(function() {
+  $('#submit').click(function() {
+    ExchangeService.getExRate()
+      .then(function(response) {
+        convertCurrency(response);
+      )};
+  });
+});
