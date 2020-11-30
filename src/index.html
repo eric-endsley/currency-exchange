@@ -10,15 +10,18 @@
     <div class="jumbotron">
      <h1>Currency Exchange Calculator</h1>
     </div>
-    <label for ="dollars">Enter the number of USD you want to convert:</label>
-    <input id="dollars" type="number"></input>
-    <select class="form-control" id="currency">
-      <option value="EUR">Euros (EU)</option>
-      <option value= "GBP">Pounds (UK)</option>
-      <option value="JPY">Yen (JP)</option>
-      <option value="CNY">Yuan (CN)</option>
-      <option value="BRL">Real (BZ)</option>
-    </select>
+    <form id="exchange-form">
+      <label for ="dollars">Enter the number of USD you want to convert:</label>
+      <input id="dollars" type="number"></input>
+      <select class="form-control" id="currency">
+        <option value="EUR">Euros (EU)</option>
+        <option value="GBP">Pounds (UK)</option>
+        <option value="JPY">Yen (JP)</option>
+        <option value="CNY">Yuan (CN)</option>
+        <option value="BRL">Real (BZ)</option>
+      </select>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </form>
     <div class = "output">
     </div>
   </div>
