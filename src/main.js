@@ -8,9 +8,12 @@ function convertCurrency(response) {
   if (response.result === "success") {
     let newCurrency = $("#currency").val();
     let usdInput = $("#dollars").val();
-    let convertDollars = usdInput * response.conversion_rates[newCurrency};
-    console.log(convertDollars)
-    $("#output").text(convertDollars);
+    if (response.conversion_rates[newCurrency]) {
+      let convertDollars = usdInput * response.conversion_rates[newCurrency];
+      $("#output").text(convertDollars);
+    } else {
+      $("#output").text("Please select a valid currency");
+    }
   } else {
     $("#output").text(`An error occured: ${response.message}`);
   }
@@ -20,7 +23,6 @@ $(document).ready(function() {
   $('#submit').click(function() {
     ExchangeService.getExRate()
       .then(function(response) {
-        console.log(response);
         convertCurrency(response);
       });
   });
