@@ -7,7 +7,6 @@ import {ExchangeService} from './exchange-service.js';
 function convertCurrency(response) {
   if (response.result === "success") {
     let inputArray = $("#currency").val().split(', ');
-    console.log(inputArray)
     let currencyCode = inputArray[0];
     if (response.conversion_rates[currencyCode]) {
       let currencyName =  inputArray[1];
