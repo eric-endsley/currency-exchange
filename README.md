@@ -15,11 +15,11 @@ This project requires Node.js to run. If you don't have Node installed on your m
 Navigate to the website for the [Exchange Rate API](https://www.exchangerate-api.com/). Enter your email address in the form provided and follow their instructions to recieve an API Key. Once you have registered and signed in, your API Key will be listed under API Access. Copy the string of characters or refer back to this webpage to do so when instructed to input your API Key in a .env file later. 
 
 #### Clone and Open The Code Locally
- 1. Open the [URL TITLE](https://github.com/eric-endsley/week-6-project.git) by clicking the link or copy/pasting https://github.com/eric-endsley/week-6-project.git in the navigator bar of a web browser application.
+ 1. Open the [Currency Exchange Calculator website](https://github.com/eric-endsley/week-6-project.git) by clicking the link or copy/pasting https://github.com/eric-endsley/week-6-project.git in the navigator bar of a web browser application.
 
  2. Click the green Code button in the upper-right part of the window and then EITHER:
 
- 3. a. Copy the HTTPS URL for the repo and use it in the git clone command in git-bash or another git terminal by inputting: "git clone https://github.com/eric-endsley/week-6-project.git"<br> 
+ 3. a. Copy the HTTPS URL for the repo and use it in the git clone command in git-bash or another git terminal by inputting: "git clone https://github.com/eric-endsley/week-6-project.git"<br>
  OR b. Click "Download Zip" and unzip the file to an accessible location on your machine.
 
  4. Right click on the project directory and open it with VS Code or another code editor. 
@@ -35,7 +35,7 @@ Navigate to the website for the [Exchange Rate API](https://www.exchangerate-api
  4. Enter the commands "npm run build" followed by "npm run start" to initiate a live reloading instance of the webpage locally.
 
 ## Technologies Used
-[Exchange Rate API](https://exchangerate-api.com/) found at https://exchangerate-api.com/.
+[Exchange Rate API](https://exchangerate-api.com/) found at https://exchangerate-api.com/<br>
 Javascript, JQuery, CSS, HTML, Node, Popper, Babel and ESLint
 
 ## Known Bugs
