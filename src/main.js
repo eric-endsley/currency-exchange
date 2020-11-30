@@ -13,7 +13,7 @@ function convertCurrency(response) {
       let currencyName =  inputArray[1];
       let usdInput = $("#dollars").val();
       let convertDollars = usdInput * response.conversion_rates[currencyCode];
-      $("#output").text(`${usdInput} USD is equivalent to ${convertDollars} in ${currencyName}`);
+      $("#output").text(`${usdInput} USD is equivalent to ${convertDollars} ${currencyName}`);
     } else {
       $("#output").text("Please select a valid currency");
     }
