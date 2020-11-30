@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({                                                                                                                                
-      title: "",
+      title: "exchange-rate-calculator",
       template: "./src/index.html",
       inject: "body",
     }),
