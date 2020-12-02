@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import {ExchangeService} from './exchange-service.js';
 
-function convertCurrency(response) {
+function convertCurrency(response, currencyFromName) {
   if (response.result === "success") {
     let inputArray = $("#currency").val().split(', ');
     let currencyCode = inputArray[0];
@@ -12,7 +12,7 @@ function convertCurrency(response) {
       let currencyName =  inputArray[1];
       let usdInput = $("#dollars").val();
       let convertDollars = usdInput * response.conversion_rates[currencyCode];
-      $("#output").text(`${usdInput} USD is equivalent to ${convertDollars} ${currencyName}`);
+      $("#output").text(`${usdInput} ${currencyFromName} is equivalent to ${convertDollars} ${currencyName}`);
     } else {
       $("#output").text("Please select a valid currency");
     }
@@ -23,9 +23,12 @@ function convertCurrency(response) {
 
 $(document).ready(function() {
   $('#submit').click(function() {
-    ExchangeService.getExRate()
+    let currencyFromArray = $('#currencyFrom').val().split(', ');
+    let currencyFromCode = currencyFromArray[0];
+    let currencyFromName = currencyFromArray[1];
+    ExchangeService.getExRate(currencyFromCode)
       .then(function(response) {
-        convertCurrency(response);
+        convertCurrency(response, currencyFromName);
       });
   });
 });
