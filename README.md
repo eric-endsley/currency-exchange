@@ -1,11 +1,11 @@
 # Currency Exchange Calculator
 
-#### A webpage which takes user inputs in US dollars and displays their current equivalent value in 5 other currencies, 11/30/20
+#### A webpage which converts a quantity of one currency into its equivalent value in another currency using up-to-date exchange rates, 11/30/20
 
 #### By Eric Endsley
 
 ## Description
-This webpage fetches data from the Exchange Rate API found [here](https://exchangerate-api.com//) to pull up-to-date exchange rates for the US dollar into other currencies. The two form inputs allow users to enter a number of US dollars and select from 5 currencies (Euros, Pounds, Yuan, Yen and Real). Upon submission the page displays a string which states the equivalent value of the inputted number of USD in the selected currency. Additional currencies can easily be added to this program by adding additional options to the currencies form with values that correspond to the currency codes listed in the API documentation found [here](https://exchangerate-api.com/docs/supported-currencies).
+This webpage fetches data from the Exchange Rate API found [here](https://exchangerate-api.com//) to pull up-to-date exchange rates for between all currencies provided by the API. The three form inputs allow users to enter a currency to convert from, an amount of that currency, and a currency to convert to. When the user clicks the submit button, the page displays a string which states value of the given amount in first currency selection converted into the selected currency. The converter is able to convert both from and to all available currencies offered by the aforementioned API.
 
 ## Setup
 #### Get Node
