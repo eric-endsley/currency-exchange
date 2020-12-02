@@ -36,7 +36,7 @@ Navigate to the website for the [Exchange Rate API](https://www.exchangerate-api
 
 ## Technologies Used
 [Exchange Rate API](https://exchangerate-api.com/) found at https://exchangerate-api.com/<br>
-Javascript, JQuery, CSS, HTML, Node, Popper, Babel and ESLint
+Javascript, JQuery, CSS, Bootstrap, HTML, Node, Popper, Babel and ESLint
 
 ## Known Bugs
 None
