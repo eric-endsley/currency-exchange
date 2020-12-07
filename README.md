@@ -5,7 +5,7 @@
 #### By Eric Endsley
 
 ## Description
-This webpage fetches data from the Exchange Rate API found [here](https://exchangerate-api.com//) to pull up-to-date exchange rates for between all currencies provided by the API. The three form inputs allow users to enter a currency to convert from, an amount of that currency, and a currency to convert to. When the user clicks the submit button, the page displays a string which states value of the given amount in first currency selection converted into the selected currency. The converter is able to convert both from and to all available currencies offered by the aforementioned API.
+This webpage fetches data from the Exchange Rate API found [here](https://exchangerate-api.com//) to pull up-to-date exchange rates for between all currencies provided by the API. The three form inputs allow users to enter a currency to convert from, an amount of that currency, and a currency to convert to. When the user clicks the submit button, the page displays a string which states value of the given amount in first currency selection converted into the selected currency. The converter is able to convert both from and to all available currencies offered by the aforementioned API. The page also displays an icon of the country's flag associated with each currency upon change of the select form. 
 
 ## Setup
 #### Get Node
@@ -36,6 +36,7 @@ Navigate to the website for the [Exchange Rate API](https://www.exchangerate-api
 
 ## Technologies Used
 [Exchange Rate API](https://exchangerate-api.com/) found at https://exchangerate-api.com/<br>
+[Flagpedia Flag Image Library](https://flagpedia.net/download/api) found at https://flagpedia.net/download/api<br>
 Javascript, JQuery, CSS, Bootstrap, HTML, Node, Popper, Babel and ESLint
 
 ## Known Bugs

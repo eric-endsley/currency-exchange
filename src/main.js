@@ -22,7 +22,7 @@ function convertCurrency(response, currencyFromName) {
 } 
 
 $(document).ready(function() {
-  $('#submit').submit(function() {
+  $('#submit').click(function() {
     let currencyFromArray = $('#currencyFrom').val().split(', ');
     let currencyFromCode = currencyFromArray[0];
     let currencyFromName = currencyFromArray[1];
@@ -30,7 +30,6 @@ $(document).ready(function() {
       .then(function(response) {
         convertCurrency(response, currencyFromName);
       });
-    return false;
   });
 
   $('#currencyFrom').change(function() {
