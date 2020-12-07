@@ -32,3 +32,11 @@ $(document).ready(function() {
       });
   });
 });
+
+$(document.ready(function() {
+  $(#currencyFrom).change(function() {
+    let currencyFromArray = $('#currencyFrom').val().split(', ');
+    let currencyFromCode = currencyFromArray[2];
+    $('#flag').html(<img src="https://flagcdn.com/16x12/" + currencyFromCode ".png" srcset="https://flagcdn.com/32x24/" + currencyFromCode + ".png 2x, https://flagcdn.com/48x36/" + currencyFromCode + ".png 3x" width="16" height="12")
+  });
+});
